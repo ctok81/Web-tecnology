@@ -33,11 +33,11 @@ a{
 	transition: .3s ease-out;
 	border-radius: 5px;
 	text-decoration: none;
+  transition-delay: .0,5s;
 }
 
 a:hover{
 	background-size: 100% 3px, 100% 3px;
-	color: #FE5568;
 	border-radius: 10px;
 }
 
