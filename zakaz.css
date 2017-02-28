@@ -1,0 +1,19 @@
+th {
+  font-size: 16px;
+  font-weight: normal;
+  background: #b9c9fe;
+  border-top: 5px solid #aabcfe;
+  border-bottom: 2px solid #fff;
+  color: #039;
+  padding: 8px;
+}
+td {
+  background: #e8edff;
+  border-bottom: 2px solid #fff;
+  color: #669;
+  border-top: 2px solid transparent;
+  padding: 10px;
+}
+tr:hover td {
+  background: #ccddff; 
+}
