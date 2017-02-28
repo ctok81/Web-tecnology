@@ -25,6 +25,7 @@
 	if ($result = 'true')
 	{
 		echo "В ближайшее время с вами свяжется наш специалист. ";
+		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}
 	else
 	{
