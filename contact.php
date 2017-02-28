@@ -1,23 +1,24 @@
 <html>
 	<head>
-		<title>Контакты</title>
+		<title>РљРѕРЅС‚Р°РєС‚С‹</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
 		<header>  	
 			<nav align=center>
 				<img src = "t.jpg" height=100 width=100></img>
-				<ul><a href="index.php">Главная страница</a></ul>
-				<ul><a href="contact.php">Контакты</a></ul>
-				<ul><a href="zakaz.php">Заказать услугу</a></ul>
+				<ul><a href="index.php">Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</a></ul>
+				<ul><a href="contact.php">РљРѕРЅС‚Р°РєС‚С‹</a></ul>
+				<ul><a href="zakaz.php">Р—Р°РєР°Р·Р°С‚СЊ СѓСЃР»СѓРіСѓ</a></ul>
 			</nav>
 		</header>
-		<p align="center"> Наш Адрес: г. Пермь, ул. Профессора Поздеева, 7.</p>
+		
+		<p align="center"> РќР°С€ РђРґСЂРµСЃ: Рі. РџРµСЂРјСЊ, СѓР». РџСЂРѕС„РµСЃСЃРѕСЂР° РџРѕР·РґРµРµРІР°, 7.</p>
 		<div align=center>
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tV8hfAIHkZkwRiThllCyM12PeUSrnNmq&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
 			</script>
 		</div>
-		<footer>Компания /*Наше навзание*/</footer>
+		<footer>РљРѕРјРїР°РЅРёСЏ /*РќР°С€Рµ РЅР°РІР·Р°РЅРёРµ*/</footer>
 	</body>
 
 </html>

@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Оформить заказ</title>
+		<title>РћС„РѕСЂРјРёС‚СЊ Р·Р°РєР°Р·</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" type="text/css" href="zakaz.css">
 	</head>
@@ -9,34 +9,34 @@
 		<header> 
 			<nav align=center>
 				<img src = "t.jpg" height=100 width=100></img>
-				<ul><a href="index.php">Главная страница</a></ul>
-				<ul><a href="contact.php">Контакты</a></ul>
-				<ul><a href="zakaz.php">Заказать услугу</a></ul>
+				<ul><a href="index.php">Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</a></ul>
+				<ul><a href="contact.php">РљРѕРЅС‚Р°РєС‚С‹</a></ul>
+				<ul><a href="zakaz.php">Р—Р°РєР°Р·Р°С‚СЊ СѓСЃР»СѓРіСѓ</a></ul>
 			</nav>
 		</header>
 		
 		<div align=center>
 			<p></p>
 			<table align=center>
-				<tr><th>Наименование услуги</th><th>Цена</th></tr>
-				<tr><td>Починка компьюктера</td><td>100 $</td></tr>
-				<tr><td>Чтобы всё работало</td><td>100 $</td></tr>
-				<tr><td>Настройка вифи</td><td>100 $</td></tr>
-				<tr><td>Убрать полосы с экрана</td><td>100 $</td></tr>
-				<tr><td>Почистить память и ауру</td><td>100 $</td></tr>
-				<tr><td>Помыть машину</td><td>1000 $</td></tr>
+				<tr><th>РќР°РёРјРµРЅРѕРІР°РЅРёРµ СѓСЃР»СѓРіРё</th><th>Р¦РµРЅР°</th></tr>
+				<tr><td>РџРѕС‡РёРЅРєР° РєРѕРјРїСЊСЋРєС‚РµСЂР°</td><td>100 $</td></tr>
+				<tr><td>Р§С‚РѕР±С‹ РІСЃС‘ СЂР°Р±РѕС‚Р°Р»Рѕ</td><td>100 $</td></tr>
+				<tr><td>РќР°СЃС‚СЂРѕР№РєР° РІРёС„Рё</td><td>100 $</td></tr>
+				<tr><td>РЈР±СЂР°С‚СЊ РїРѕР»РѕСЃС‹ СЃ СЌРєСЂР°РЅР°</td><td>100 $</td></tr>
+				<tr><td>РџРѕС‡РёСЃС‚РёС‚СЊ РїР°РјСЏС‚СЊ Рё Р°СѓСЂСѓ</td><td>100 $</td></tr>
+				<tr><td>РџРѕРјС‹С‚СЊ РјР°С€РёРЅСѓ</td><td>1000 $</td></tr>
 			</table>
 		</div>
 			<form action="handler.php" method="post">
-			<input type="text" name="phone" placeholder="Телефон">
-			<input list="lis" name="listbase" placeholder = "Выберите проблему">
-			<input type="submit" value="Отправить">
+			<input type="text" name="phone" placeholder="РўРµР»РµС„РѕРЅ">
+			<input list="lis" name="listbase" placeholder = "Р’С‹Р±РµСЂРёС‚Рµ РїСЂРѕР±Р»РµРјСѓ">
+			<input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ">
 		
 			<datalist id="lis">
-				<option>Серьезная проблема</option>
-				<option>Не очень</option>
+				<option>РЎРµСЂСЊРµР·РЅР°СЏ РїСЂРѕР±Р»РµРјР°</option>
+				<option>РќРµ РѕС‡РµРЅСЊ</option>
 			</datalist> 
 		
-		<footer>Компания /*Наше навзание*/</footer>
+		<footer>РљРѕРјРїР°РЅРёСЏ /*РќР°С€Рµ РЅР°РІР·Р°РЅРёРµ*/</footer>
 	</body>
 </html>
