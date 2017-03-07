@@ -41,7 +41,7 @@ function hw(id) {
 			}	
 		echo"</div>";
 		
-		if(isset($_GET['gri']))
+		if(isset($_GET['gri'])&& $_GET['gri']<7)
 		{
 			$gr_i=$_GET['gri'];
 			echo"<div class='divTable' style='width: 60%; border: 1px solid #000;'>";
@@ -57,12 +57,13 @@ function hw(id) {
 			}	
 		 echo"</div>";
 		echo"</div>";
-	}
-	else
-	{
+
+		}
+		else
+		{
 		
 
-	}
+		}
 ?>
 		<p>
 			<form align = center action="handler.php" method="post">
