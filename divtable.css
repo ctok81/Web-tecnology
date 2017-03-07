@@ -1,0 +1,54 @@
+	.DivAllList{
+		width: 60%;
+		margin: auto;
+		
+	}
+	.Li2st{
+	 width:700px; 
+	 border:1px solid #882211;
+	 padding: 4px; 
+	 margin:auto; 
+	 margin-top:1px; 
+	 cursor: pointer;
+	 background: greenyellow;
+	}
+	.Li2st:hover
+	{
+		background-color: #ffcc00;
+	}
+.divTable{
+	display: table;
+	width: 100px;
+	margin: auto;
+	margin-top: 10px;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableRow:hover {
+	background-color: #33ff22;
+	}
+.divTableCell {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+	color: #113322;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
