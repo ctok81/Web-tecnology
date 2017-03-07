@@ -45,13 +45,16 @@ function hw(id) {
 		{
 			$gr_i=$_GET['gri'];
 			echo"<div class='divTable' style='width: 60%; border: 1px solid #000;'>";
+
+			
+
+			echo"<div class='divTableHeading'>";
+			
+			echo"<div class='divTableCell'>Наименование</div>";
+			echo"<div class='divTableCell'>Цена(руб)</div>";
+			echo"</div>";
 			
 			echo "<div class='divTableBody'>";
-			echo"<div class='divTableRow'>";
-			echo"<div class='divTableCell2'>Наименование</div>";
-			echo"<div class='divTableCell2'>Цена(руб)</div>";
-			echo"</div>";
-
 		$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
 		While($problemrows = mysql_fetch_row($sqlServices))
 			{
