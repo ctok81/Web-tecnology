@@ -65,6 +65,8 @@ function hw(id) {
 			}
 		 echo"</div>";
 		echo"</div>";
+		$date= date('Y-m-d H:i:s');
+		echo "$date";
 	}
 	else
 	{
@@ -74,14 +76,10 @@ function hw(id) {
 ?>
 		<p>
 			<form align = center action="handler.php" method="post">
-			<input type="text" name="phone" placeholder="Телефон">
-			<input list="lis" name="listbase" placeholder = "Выберите проблему">
-			<input type="submit" value="Отправить">
+			<input type="text" name="phone" placeholder="Телефон"/>
+			<input type="text" name="namecl" placeholder="Ваше Имя"/>
+			<input type="submit" value="Отправить"/>
 
-			<datalist id="lis">
-				<option>Серьезная проблема</option>
-				<option>Не очень</option>
-			</datalist>
 		</p>
 		<footer>Компания /*Наше навзание*/</footer>
 	</body>
