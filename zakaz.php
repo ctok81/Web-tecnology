@@ -3,6 +3,15 @@
 		<title>Оформить заказ</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" type="text/css" href="zakaz.css">
+		<link rel="stylesheet" type="text/css" href="divtable.css">
+		
+<script type="text/javascript">
+function hw(id) {
+	document.location.href="?gri=" + id;
+	return id;
+};
+
+</script>
 	</head>
 
 	<body>
@@ -14,19 +23,47 @@
 				<ul><a href="zakaz.php">Заказать услугу</a></ul>
 			</nav>
 		</header>
+		<br/>
+		<?php 
+		include("bd.php");
+
+		$sqlGroups = mysql_query("SELECT name FROM Group_Services WHERE 1;",$db);
+		//выбор группы проблемы
+		echo "<div class='DivAllList'>";
+
+		$co=0;
+		$gr_i=1;
+
+		While($tablerows = mysql_fetch_row($sqlGroups))
+			{
+				$co=$co+1;
+			echo("<div class='Li2st' onclick='hw($co); ' >$tablerows[0]</div>");
+			}	
+		echo"</div>";
 		
-		<div align=center>
-			<p></p>
-			<table align=center>
-				<tr><th>Наименование услуги</th><th>Цена</th></tr>
-				<tr><td>Починка компьюктера</td><td>100 $</td></tr>
-				<tr><td>Чтобы всё работало</td><td>100 $</td></tr>
-				<tr><td>Настройка вифи</td><td>50 $</td></tr>
-				<tr><td>Убрать полосы с экрана</td><td>100 $</td></tr>
-				<tr><td>Почистить память и ауру</td><td>100 $</td></tr>
-				<tr><td>Помыть машину</td><td>1000 $</td></tr>
-			</table>
-		</div>
+		if(isset($_GET['gri']))
+		{
+			$gr_i=$_GET['gri'];
+			echo"<div class='divTable' style='width: 60%; border: 1px solid #000;'>";
+		echo"<div class='divTableBody'>";
+		
+		$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
+		While($tablerows2 = mysql_fetch_row($sqlServices))
+			{
+			echo"<div class='divTableRow'>";
+			echo"<div class='divTableCell'>$tablerows2[0]</div>";
+			echo"<div class='divTableCell'>$tablerows2[1]</div>";
+			echo"</div>";
+			}	
+		 echo"</div>";
+		echo"</div>";
+	}
+	else
+	{
+		
+
+	}
+?>
 		<p>
 			<form align = center action="handler.php" method="post">
 			<input type="text" name="phone" placeholder="Телефон">
