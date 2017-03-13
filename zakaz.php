@@ -44,43 +44,49 @@ function hw(id) {
 		if(isset($_GET['gri']) && $_GET['gri']<7)
 		{
 			$gr_i=$_GET['gri'];
-			echo"<div class='divTable' style='width: 60%; border: 1px solid #000;'>";
+			echo"<div class='divTable'>";
+				echo"<div class='divTableRow'>";
+					echo"<div class='divTableCell'>";
+							echo"<div class='divTableHeading'>";
+								echo"<div class='divTableCell'>Наименование</div>";
+								echo"<div class='divTableCell'>Цена(руб)</div>";
+							echo"</div>";
 
-			
+								echo "<div class='divTableBody'>";
+								$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
+								While($problemrows = mysql_fetch_row($sqlServices))
+								{
+								echo"<div class='divTableRow'>";
+									echo"<div class='divTableCell'>$problemrows[0]</div>";
+									echo"<div class='divTableCell'>$problemrows[1]</div>";
+								echo"</div>";
+								}
+							echo"</div>";//table-body
+					echo"</div>";//table-cell
 
-			echo"<div class='divTableHeading'>";
-			
-			echo"<div class='divTableCell'>Наименование</div>";
-			echo"<div class='divTableCell'>Цена(руб)</div>";
-			echo"</div>";
-			
-			echo "<div class='divTableBody'>";
-		$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
-		While($problemrows = mysql_fetch_row($sqlServices))
-			{
-			echo"<div class='divTableRow'>";
-			echo"<div class='divTableCell'>$problemrows[0]</div>";
-			echo"<div class='divTableCell'>$problemrows[1]</div>";
-			echo"</div>";
-			}
-		 echo"</div>";
-		echo"</div>";
-		$date= date('Y-m-d H:i:s');
-		echo "$date";
+		//echo"<div class='divTableFoot'>";
+		//$date= date('Y-m-d H:i:s'); // лучше отображать это в footerе
+		//echo "$date";
+		//echo"</div>";
 	}
 	else
 	{
-
-
+		echo "Возникла ошибка";
 	}
 ?>
-		<p>
-			<form align = center action="handler.php" method="post">
-			<input type="text" name="phone" placeholder="Телефон"/>
-			<input type="text" name="namecl" placeholder="Ваше Имя"/>
-			<input type="submit" value="Отправить"/>
-
-		</p>
-		<footer>Компания /*Наше навзание*/</footer>
+				<div class='divTableCell'>
+					<form align="center" action="handler.php" method="post" style="border: 10px; margin: 10px; padding: 3px 5px;">
+						<input type="text" name="phone" placeholder="Телефон" style="margin: 3px; width: 100%;">
+						<input type="text" name="namecl" placeholder="Ваше Имя" style="margin: 3px; width: 100%;">
+						<input type="submit" value="Заказть услугу" style="margin: 3px;width: 100%;">
+					</form>
+				</div><!table-cell>
+			</div><!table-row>
+		</div><!table>
+		<footer>
+			Компания /*Наше навзание*/
+			<?php $date = date('Y-m-d H:i:s');
+			echo "$date";?>
+		</footer>
 	</body>
 </html>
