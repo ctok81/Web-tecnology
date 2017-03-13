@@ -45,24 +45,23 @@ function hw(id) {
 		{
 			$gr_i=$_GET['gri'];
 			echo"<div class='divTable'>";
-				echo"<div class='divTableRow'>";
-					echo"<div class='divTableCell'>";
-							echo"<div class='divTableHeading'>";
-								echo"<div class='divTableCell'>Наименование</div>";
-								echo"<div class='divTableCell'>Цена(руб)</div>";
-							echo"</div>";
+				echo"<div class='divTableCell'>";
+					echo"<div class='divTableHeading'>";
+						echo"<div class='divTableCell'>Наименование</div>";
+						echo"<div class='divTableCell'>Цена(руб)</div>";
+					echo"</div>";
 
-								echo "<div class='divTableBody'>";
-								$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
-								While($problemrows = mysql_fetch_row($sqlServices))
-								{
-								echo"<div class='divTableRow'>";
-									echo"<div class='divTableCell'>$problemrows[0]</div>";
-									echo"<div class='divTableCell'>$problemrows[1]</div>";
-								echo"</div>";
-								}
-							echo"</div>";//table-body
-					echo"</div>";//table-cell
+					echo "<div class='divTableBody'>";
+						$sqlServices = mysql_query("SELECT name,pricer FROM `Service` WHERE group_id=$gr_i",$db);
+						While($problemrows = mysql_fetch_row($sqlServices))
+						{
+						echo"<div class='divTableRow'>";
+							echo"<div class='divTableCell'>$problemrows[0]</div>";
+							echo"<div class='divTableCell'>$problemrows[1]</div>";
+						echo"</div>";
+						}
+					echo"</div>";//table-body
+				echo"</div>";//table-cell
 
 		//echo"<div class='divTableFoot'>";
 		//$date= date('Y-m-d H:i:s'); // лучше отображать это в footerе
@@ -78,10 +77,9 @@ function hw(id) {
 					<form align="center" action="handler.php" method="post" style="border: 10px; margin: 10px; padding: 3px 5px;">
 						<input type="text" name="phone" placeholder="Телефон" style="margin: 3px; width: 100%;">
 						<input type="text" name="namecl" placeholder="Ваше Имя" style="margin: 3px; width: 100%;">
-						<input type="submit" value="Заказть услугу" style="margin: 3px;width: 100%;">
+						<input type="submit" value="Заказать услугу" style="margin: 3px;width: 100%;">
 					</form>
-				</div><!table-cell>
-			</div><!table-row>
+			</div><!table-cell>
 		</div><!table>
 		<footer>
 			Компания /*Наше навзание*/

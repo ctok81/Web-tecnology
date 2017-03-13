@@ -11,6 +11,7 @@
 	 margin-top:2px;
 	 cursor: pointer;
 	 background: greenyellow;
+	 font: helvetica;
 	}
 	.Li2st:hover
 	{
@@ -23,24 +24,32 @@
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	border: 1px;
+	border-radius: 10px;
 	cursor: pointer;
 }
 .divTableRow {
 	display: table-row;
 }
-.divTableRow:hover {
-	/*background-color: #33ff22;*/
-}
 
 .divTableHeading {
-	background-color: #EEE;
+	background-color: #b9b9b9;
 	display: table-header-group;
+  border: 6px solid #de2c40;
 }
 
 .divTableCell {
 	display: table-cell;
 	padding: 3px 10px;
 	color: #113322;
+}
+
+.divTableBody:hover{
+	border: 5px;
+	border-radius: 10px;
+	border-color: #33ff22;
+	background-color: #EEE;
+	transition: .3s ease-out;
 }
 
 .divTableFoot {
@@ -53,8 +62,7 @@
 	border: 1px solid #000;
 }
 
-input::hover{
-	background-color: #436463;
-	border-radius: 3px;
-	border: 10px;
+input:hover{
+	transition: .5s ease-out;
+
 }

@@ -34,7 +34,7 @@ a{
 	border-radius: 5px;
 	text-decoration: none;
   transition-delay: .0,7s;
-	font: 14pt sans-serif;
+	font: 14pt helvetica;
 }
 
 a:hover{
