@@ -74,7 +74,7 @@ function hw(id) {
 	}
 ?>
 				<div class='divTableCell'>
-					<form align="center" action="handler.php" method="post" style="border: 10px; margin: 10px; padding: 3px 5px;">
+					<form align="center" action="handler.php" method="post" style="border: 5px; margin: 5px; padding: 3px 5px;">
 						<input type="text" name="phone" placeholder="Телефон" style="margin: 3px; width: 100%;">
 						<input type="text" name="namecl" placeholder="Ваше Имя" style="margin: 3px; width: 100%;">
 						<input type="submit" value="Заказать услугу" style="margin: 3px;width: 100%;">

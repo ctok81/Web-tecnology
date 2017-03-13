@@ -1,21 +1,29 @@
 	.DivAllList{
-		width: 80%;
+		width: 65%;
 		margin: auto;
 
 	}
 	.Li2st{
-	 width:700px;
 	 border:1px solid #882211;
-	 padding: 4px;
+	 padding: 5px;
+	 padding-left: 20px;
 	 margin:auto;
 	 margin-top:2px;
+	 border-radius: 4px;
 	 cursor: pointer;
-	 background: greenyellow;
-	 font: helvetica;
+	 font: 14pt helvetica;
+	 background-image: linear-gradient(#f07769 50%, #f07769 50%), linear-gradient(#f07769 50%, #f07769 50%),
+	 linear-gradient(silver 50%, silver 50%), linear-gradient(silver 50%, silver 50%);
+	 background-size: 2% 100%, 2% 100%, 0% 100%, 0% 100%;
+	 background-position: left, right, left, right;
+	 background-repeat: repeat-y, repeat-y, repeat-y, repeat-y;
 	}
 	.Li2st:hover
 	{
-		background-color: #ffcc00;
+		transition: .3s ease-out;
+		border-radius: 8px;
+		border: 1px inset;
+		background-size: 0% 100%, 0% 100%, 2% 100%, 2% 100%;
 	}
 
 
@@ -27,29 +35,26 @@
 	border: 1px;
 	border-radius: 10px;
 	cursor: pointer;
+	width: 65%;
 }
 .divTableRow {
 	display: table-row;
 }
 
+.divTableRow:hover{
+	background-color: #EEE;
+	transition: .3s ease-out;
+}
+
 .divTableHeading {
 	background-color: #b9b9b9;
 	display: table-header-group;
-  border: 6px solid #de2c40;
 }
 
 .divTableCell {
 	display: table-cell;
 	padding: 3px 10px;
 	color: #113322;
-}
-
-.divTableBody:hover{
-	border: 5px;
-	border-radius: 10px;
-	border-color: #33ff22;
-	background-color: #EEE;
-	transition: .3s ease-out;
 }
 
 .divTableFoot {
@@ -59,10 +64,13 @@
 }
 .divTableBody {
 	display: table-row-group;
-	border: 1px solid #000;
+}
+
+input{
+	padding: 5px;
 }
 
 input:hover{
 	transition: .5s ease-out;
-
+	
 }
