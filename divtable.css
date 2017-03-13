@@ -19,7 +19,7 @@
 
 
 .divTable{
-	width: 50%;
+	align-items: 
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -27,7 +27,6 @@
 }
 .divTableRow {
 	display: table-row;
-	width: 50%;
 }
 .divTableRow:hover {
 	/*background-color: #33ff22;*/
@@ -54,8 +53,8 @@
 	border: 1px solid #000;
 }
 
-.divdiv {
-	padding: 30px;
-	margin: 10px;
-	border: 1em;
+input::hover{
+	background-color: #436463;
+	border-radius: 3px;
+	border: 10px;
 }
