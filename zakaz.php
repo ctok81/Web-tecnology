@@ -17,12 +17,13 @@ function hw(id) {
 	<body>
 		<header>
 			<nav align=center>
-				<img src = "t.jpg" height=100 width=100></img>
+				<img src = "t.jpg" height=100 width=100 align="center"></img>
 				<ul><a href="index.php">Главная страница</a></ul>
 				<ul><a href="contact.php">Контакты</a></ul>
 				<ul><a href="zakaz.php">Заказать услугу</a></ul>
 			</nav>
 		</header>
+		
 		<br/>
 		<?php
 		$flag = false;
@@ -89,7 +90,7 @@ function hw(id) {
 			</div>
 		<footer>
 			<div>Компания /*Наше навзание*/
-			 	<span style="float:right"><?php $date = date('Y-m-d H:i:s');
+			 	<span style="float:right"><?php $date = date('Y-m-d H:i:s',time()+(2*3600));
 					echo "$date";?>
 				</span>
 			</div>
