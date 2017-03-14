@@ -23,8 +23,9 @@ function hw(id) {
 				<ul><a href="zakaz.php">Заказать услугу</a></ul>
 			</nav>
 		</header>
-		
+
 		<br/>
+		<article>
 		<?php
 		$flag = false;
 		include("bd.php");
@@ -88,6 +89,8 @@ function hw(id) {
 					</form>
 				</div>
 			</div>
+
+		</article>
 		<footer>
 			<div>Компания /*Наше навзание*/
 			 	<span style="float:right"><?php $date = date('Y-m-d H:i:s',time()+(2*3600));
