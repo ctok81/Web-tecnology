@@ -20,7 +20,7 @@
 	}
 	.Li2st:hover
 	{
-		transition: .3s ease-out;
+		transition: .1s ease-out;
 		border-radius: 8px;
 		border: 1px inset;
 		background-size: 0% 100%, 0% 100%, 2% 100%, 2% 100%;
