@@ -46,15 +46,39 @@
 	transition: .3s ease-out;
 }
 
+.divTableRow:active{
+	transition: .3s ease-out;
+	background-color: #1E5;
+}
+
+.divTableRow:checked{
+	transition: .5s ease-in-out;
+	background-color: #91E;
+}
+
+.divTableRow:empty{
+	.transition: .20s ease-out;
+	background-color: #236;
+}
+
 .divTableHeading {
 	background-color: #b9b9b9;
 	display: table-header-group;
+	width: 100%;
 }
 
 .divTableCell {
 	display: table-cell;
-	padding: 3px 10px;
+	padding: 3px 3px;
 	color: #113322;
+	width: 50%;
+}
+
+.divTableCell1 {
+	display: table-cell;
+	padding: 3px 3px;
+	color: #113322;
+	width: 20%;
 }
 
 .divTableFoot {
@@ -72,5 +96,5 @@ input{
 
 input:hover{
 	transition: .5s ease-out;
-	
+
 }

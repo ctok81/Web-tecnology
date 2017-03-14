@@ -48,7 +48,7 @@ function hw(id) {
 				echo"<div class='divTableCell'>";
 					echo"<div class='divTableHeading'>";
 						echo"<div class='divTableCell'>Наименование</div>";
-						echo"<div class='divTableCell'>Цена(руб)</div>";
+						echo"<div class='divTableCell1'>Цена(руб)</div>";
 					echo"</div>";
 
 					echo "<div class='divTableBody'>";
@@ -57,7 +57,7 @@ function hw(id) {
 						{
 						echo"<div class='divTableRow'>";
 							echo"<div class='divTableCell'>$problemrows[0]</div>";
-							echo"<div class='divTableCell'>$problemrows[1]</div>";
+							echo"<div class='divTableCell1'>$problemrows[1]</div>";
 						echo"</div>";
 						}
 					echo"</div>";//table-body
