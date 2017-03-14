@@ -25,6 +25,7 @@ function hw(id) {
 		</header>
 		<br/>
 		<?php
+		$flag = false;
 		include("bd.php");
 
 		$sqlGroups = mysql_query("SELECT name FROM Group_Services WHERE 1;",$db);
@@ -44,6 +45,7 @@ function hw(id) {
 		if(isset($_GET['gri']) && $_GET['gri']<7)
 		{
 			$gr_i=$_GET['gri'];
+			$flag = true;
 			echo"<div class='divTable'>";
 				echo"<div class='divTableCell'>";
 					echo"<div class='divTableHeading'>";
@@ -70,21 +72,27 @@ function hw(id) {
 	}
 	else
 	{
-		echo "Возникла ошибка";
+		$flag = false;
 	}
+
+			if($flag)
+				echo "<div class='divTableCell'>";
+			if(!$flag)
+				echo "<div class='divTableCellnone'>";
 ?>
-				<div class='divTableCell'>
 					<form align="center" action="handler.php" method="post" style="border: 5px; margin: 5px; padding: 3px 5px;">
-						<input type="text" name="phone" placeholder="Телефон" style="margin: 3px; width: 100%;">
-						<input type="text" name="namecl" placeholder="Ваше Имя" style="margin: 3px; width: 100%;">
-						<input type="submit" value="Заказать услугу" style="margin: 3px;width: 100%;">
+						<input type="text" name="phone" placeholder="Телефон">
+						<input type="text" name="namecl" placeholder="Ваше Имя">
+						<input type="submit" value="Заказать услугу">
 					</form>
-			</div><!table-cell>
-		</div><!table>
+				</div>
+			</div>
 		<footer>
-			Компания /*Наше навзание*/
-			<?php $date = date('Y-m-d H:i:s');
-			echo "$date";?>
+			<div>Компания /*Наше навзание*/
+			 	<span style="float:right"><?php $date = date('Y-m-d H:i:s');
+					echo "$date";?>
+				</span>
+			</div>
 		</footer>
 	</body>
 </html>
