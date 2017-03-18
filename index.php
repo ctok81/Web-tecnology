@@ -13,6 +13,11 @@
 			</nav>
 		</header>
 
+		<?php
+		$python =  shell_exec('C:\Python\python.exe C:\OpenServer\domains\localhost\parser.py');
+		echo mb_convert_encoding($python, 'UTF-8', 'Windows-1251')
+		?>
+
 		<article>
 			Мы занимаемся ремонтом вашей техники. Наши специалисты имеют сертификаты....
 		</article>
