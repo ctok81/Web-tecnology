@@ -52,8 +52,7 @@
 					Конец новостей
 					</footer>
 		</section>
-		<footer>Компания /*Наше навзание*/
-
+		<footer>Компания /*Наше навзание*/ Copyright (c) 2017 Copyright Holder All Rights Reserved.
 		</footer>
 	</body>
 </html>

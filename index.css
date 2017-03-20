@@ -88,14 +88,20 @@ a.top:active {
 	span.Date1
 	{
 		color: #41d2aa;
-		margin:5px 3px 3px 5px;
+		margin:5px 3px 5px 3px;
+		float: left;
 	}
 	span.Value
 	{
 		color: #af1111;
-		margin:5px 3px 3px 5px;
-		align-items: right;
+		margin:5px 3px 5px 3px;
+		float: right;
 	}
+	span.Value2
+	{
+		color: #af1111;
+	}
+	
 	aside.maxPars
 	{
 		position: fixed;

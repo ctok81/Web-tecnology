@@ -10,4 +10,4 @@ pogoda = soup.find('div', {'class':'current-weather__thermometer current-weather
 time = soup.find('span', {'class':'current-weather__local-time'})
 
 print(u'<span class="Date1">Текущее время:</span><span class="Value">', time.getText(), '</span><br>')
-print(u'<span class="Date1">Температура:</span><span class="Value">', re.search(r"[\−\-\+]?\d*",pogoda).group(0) ,'°C</span>')
+print(u'<span class="Date1">Температура:</span><span class="Value">', re.sub('−','-',re.search(r'[\−\-\+]?\d*',pogoda).group(0)) ,'°C</span>')
