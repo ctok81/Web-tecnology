@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Jura|Lobster|Marck+Script|Marmelad');
+body
+{
+	font-family: 'Lobster', cursive;
+	margin: 1px auto;
+}
 ul{
 	color: grey;
 	display: inline;
@@ -8,28 +14,47 @@ ul{
 	transition: .2s ease-out;
 }
 
-header{
+header.menu
+	{
 	height: 25vh;
-}
+	}
 
+header.news
+	{
+	height: 9vh;
+	}
 footer{
-	height: 5vh;
-	padding: 2px;
+	height: 4vh;
+	padding: 3px;
 	color: white;
 	background-color: grey;
+	margin: 5px 0 0 0;
 }
-
 article{
 	display: block;
-	height: 70vh;
+	height: 300px;
 	background-color: white;
-	margin: 0 auto;
 	border: 0;
-	padding: 0;
-	margin-top: 10;
+	padding: 5px;
+	margin: 2 2 1 auto;
 }
-
-a{
+article.big{
+	display: block;
+	height: 353px;
+	background-color: white;
+	border: 0;
+	padding: 5px;
+	margin: 2 2 1 auto;
+}
+article.map{
+	display: block;
+	height: 650px;
+	background-color: white;
+	border: 0;
+	padding: 5px;
+	margin: 2 2 1 auto;
+}
+a.top{
 	background-image: linear-gradient(#FE5568 50%, #FE5568 50%), linear-gradient(silver 50%, silver 50%);
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -39,16 +64,48 @@ a{
 	transition: .4s ease-out;
 	border-radius: 5px;
 	text-decoration: none;
-  transition-delay: .0,7s;
-	font: 14pt helvetica;
+  	transition-delay: .0,7s;
+	font-family: 'Marck Script', cursive;
+	font-size: 20pt;
 }
-
-a:hover{
+a.top:hover{
 	background-size: 100% 3px, 0% 3px;
 	border-radius: 10px;
 }
-
-a:active {
+a.top:active {
 	color: #497DDD;
 	border-bottom: 1px dashed;
 }
+	span
+	{
+		font-family: 'Jura', sans-serif;
+		font-style: bold;
+	}
+	span.Date2
+	{
+		color: #11ff99;
+	}
+	span.Date1
+	{
+		color: #41d2aa;
+	}
+	span.Value
+	{
+		color: #af1111;
+	}
+	aside.maxPars
+	{
+		position: fixed;
+		margin: 0px 1px 91% 86%;
+		background-color: #f1ddaa;
+		opacity: 0.75;
+	}
+	section.news
+	{
+		width: 950px;
+		background-color:#31a29a;
+		border:2px;
+		margin: 0 auto;
+		align-content: center;
+		padding: 2px;
+	}

@@ -2,7 +2,6 @@
 	<head>
 		<title>Оформить заказ</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<link rel="stylesheet" type="text/css" href="zakaz.css">
 		<link rel="stylesheet" type="text/css" href="divtable.css">
 
 <script type="text/javascript">
@@ -18,14 +17,14 @@ function hw(id) {
 		<header>
 			<nav align=center>
 				<img src = "t.jpg" height=100 width=100 align="center"></img>
-				<ul><a href="index.php">Главная страница</a></ul>
-				<ul><a href="contact.php">Контакты</a></ul>
-				<ul><a href="zakaz.php">Заказать услугу</a></ul>
+				<ul><a class="top" href="index.php">Главная страница</a></ul>
+				<ul><a class="top" href="contact.php">Контакты</a></ul>
+				<ul><a class="top" href="zakaz.php">Заказать услугу</a></ul>
 			</nav>
 		</header>
 
 		<br/>
-		<article>
+		<article class="big">
 		<?php
 		$flag = false;
 		include("bd.php");
