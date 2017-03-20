@@ -88,21 +88,24 @@ a.top:active {
 	span.Date1
 	{
 		color: #41d2aa;
+		margin:5px 3px 3px 5px;
 	}
 	span.Value
 	{
 		color: #af1111;
+		margin:5px 3px 3px 5px;
+		align-items: right;
 	}
 	aside.maxPars
 	{
 		position: fixed;
-		margin: 0px 1px 91% 86%;
+		margin: 0px 1px 90% 84%;
 		background-color: #f1ddaa;
 		opacity: 0.75;
 	}
 	section.news
 	{
-		width: 950px;
+		width: 65%;
 		background-color:#31a29a;
 		border:2px;
 		margin: 0 auto;
