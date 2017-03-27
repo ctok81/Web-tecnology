@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Jura|Lobster|Marck+Script|Marmelad');
+
 body
 {
 	font-family: 'Lobster', cursive;
@@ -14,15 +15,14 @@ ul{
 	transition: .2s ease-out;
 }
 
-header.menu
-	{
+header.menu{
 	height: 25vh;
 	}
 
-header.news
-	{
+header.news{
 	height: 9vh;
 	}
+
 footer{
 	height: 4vh;
 	padding: 3px;
@@ -38,6 +38,7 @@ article{
 	padding: 5px;
 	margin: 2 2 1 auto;
 }
+
 article.big{
 	display: block;
 	height: 353px;
@@ -75,6 +76,7 @@ a.top:hover{
 a.top:active {
 	color: #497DDD;
 	border-bottom: 1px dashed;
+	font-size: 60pt;
 }
 	span
 	{
@@ -88,20 +90,20 @@ a.top:active {
 	span.Date1
 	{
 		color: #41d2aa;
-		margin:5px 3px 5px 3px;
+		margin:2px 3px 2px 3px;
 		float: left;
 	}
 	span.Value
 	{
 		color: #af1111;
-		margin:5px 3px 5px 3px;
+		margin:2px 3px 2px 3px;
 		float: right;
 	}
 	span.Value2
 	{
 		color: #af1111;
 	}
-	
+
 	aside.maxPars
 	{
 		position: fixed;
