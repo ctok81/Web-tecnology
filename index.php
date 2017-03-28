@@ -7,8 +7,8 @@
 
 	<aside class="maxPars">
 		<?php
-		$Max_path = 'C:\Python\python.exe C:\OpenServer\domains\localhost\parser.py';
-		$Max_path2 = 'C:\Python\python.exe C:\OpenServer\domains\localhost\gitparser.py';
+		$Max_path = 'C:\Python\python.exe parser.py';
+		$Max_path2 = 'C:\Python\python.exe gitparser.py';
 		$Roma_path = 'C:\Users\Navai\AppData\Local\Programs\Python\Python36-32\python.exe C:\OpenServ\OpenServer\domains\localhost\Web-tecnology\parser.py';
 		$Roma_path2 = 'C:\Users\Navai\AppData\Local\Programs\Python\Python36-32\python.exe C:\OpenServ\OpenServer\domains\localhost\Web-tecnology\gitparser.py';
 		$python =  shell_exec($Max_path);
