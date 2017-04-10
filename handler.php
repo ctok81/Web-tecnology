@@ -1,19 +1,18 @@
 <?php
-// Получить данные из суперглобального массива $_POST и обработать их
-	if (isset( $_POST['phone'])) { $phone =  $_POST['phone']; if ($phone == '') { unset($phone);} } 
-
-	if (isset($_POST['namecl'])) { $nameClient = $_POST['namecl']; if ($nameClient == '') { unset($nameClientn);} }
-
-	$date= date('Y-m-d H+2:i:s');
+//Код Макса
 	include("bd.php");
-	
-	$result = mysql_query("INSERT INTO Calls VALUES (NULL,'$nameClient','$phone','$date')", $db);
-	if ($result = 'true')
-	{
-		echo "В ближайшее время с вами свяжется наш специалист. ";
-	}
-	else
-	{
-		echo "Не получилось";
-	}
+	$p = $_POST['phone'];
+	$f = $_POST['fio'];
+	$c = $_POST['chto'];
+	$link = mysqli_connect("127.0.0.1","Admin","963258741", "Web-tech");
+	mysqli_multi_query($link, "INSERT INTO `Client` VALUES(default, $p, '$f', '$c')");
+
+	print "<script language='Javascript'>function reload()
+				{	location = \"zakaz.php\"	};
+					setTimeout('reload()', 5000);
+			 </script>
+
+				<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";
+				exit;
+//Код Макса
 ?>

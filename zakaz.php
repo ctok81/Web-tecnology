@@ -66,10 +66,6 @@ function hw(id) {
 					echo"</div>";//table-body
 				echo"</div>";//table-cell
 
-		//echo"<div class='divTableFoot'>";
-		//$date= date('Y-m-d H:i:s'); // лучше отображать это в footerе
-		//echo "$date";
-		//echo"</div>";
 	}
 	else
 	{
@@ -81,9 +77,10 @@ function hw(id) {
 			if(!$flag)
 				echo "<div class='divTableCellnone'>";
 ?>
-					<form align="center" action="handler.php" method="post" style="border: 5px; margin: 5px; padding: 3px 5px;">
-						<input type="text" name="phone" placeholder="Телефон">
-						<input type="text" name="namecl" placeholder="Ваше Имя">
+					<form align="center" action="handler.php" target="area" method="post" style="border: 5px; margin: 5px; padding: 3px 5px;">
+						<input type='tel' required name="phone" placeholder="Ваш Телефон. Пример: 71234567890" pattern='[7]{1}[\d]{10}' maxlength="11" title="Пример: 71112345678">
+						<input type="text" name="fio" placeholder="Ваш ФИО">
+						<input type="text" name="chto" placeholder="Что-нибудь">
 						<input type="submit" value="Заказать услугу">
 					</form>
 				</div>
