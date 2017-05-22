@@ -2,6 +2,7 @@
 	<head>
 		<title>Ремонт техники /*Название*/</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta charset="utf-8">
 	</head>
 	<body>
 
