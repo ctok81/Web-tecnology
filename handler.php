@@ -1,5 +1,27 @@
 <?php
 //Код Макса
+class Client
+{
+	public $tel;// = 79080003030;
+	public $fio;
+	public $chto;
+
+	function setTel($tel){
+		if(preg_match('[7]{1}[\d]{10}', $tel)){
+			return true;}
+	}
+
+	function addClient()
+	{
+		if(setTel($_POST['phone']) //&& setTel($_POST['phone']))
+		{
+			mysqli_multi_query($link, "INSERT INTO `Client` VALUES(default, $p, '$f', '$c')");
+		}
+	}
+
+}
+
+if(is_numeric($_POST['phone'] /*& проверка других*/)){
 	include("bd.php");
 	$p = $_POST['phone'];
 	$f = $_POST['fio'];
@@ -14,5 +36,6 @@
 
 				<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";
 				exit;
+}
 //Код Макса
 ?>
