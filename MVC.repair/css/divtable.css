@@ -1,0 +1,106 @@
+	.DivAllList{
+		width: 65%;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	.Li2st{
+	 border:1px solid #882211;
+	 padding: 5px;
+	 padding-left: 20px;
+	 margin:auto;
+	 margin-top:2px;
+	 border-radius: 4px;
+	 cursor: pointer;
+	 font-family: 'Marmelad', sans-serif;
+	 font-size: 13pt;
+	 background-image: linear-gradient(#f07769 50%, #f07769 50%), linear-gradient(#f07769 50%, #f07769 50%),
+	 linear-gradient(silver 50%, silver 50%), linear-gradient(silver 50%, silver 50%);
+	 background-size: 2% 100%, 2% 100%, 0% 100%, 0% 100%;
+	 background-position: left, right, left, right;
+	 background-repeat: repeat-y, repeat-y, repeat-y, repeat-y;
+	}
+	.Li2st:hover
+	{
+		transition: .1s ease-out;
+		border-radius: 4px;
+		border: 1px inset;
+		background-size: 0% 100%, 0% 100%, 2% 100%, 2% 100%;
+	}
+
+
+.divTable{
+	display: table;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 65%;
+}
+.divTableRow {
+	display: table-row;
+}
+
+.divTableRow:hover{
+	background-color: #EEE;
+	transition: .3s ease-out;
+}
+
+.divTableRow:active{
+	transition: .3s ease-out;
+	background-color: #1E5;
+}
+
+.divTableRow:checked{
+	transition: .5s ease-in-out;
+	background-color: #91E;
+}
+
+.divTableRow:empty{
+	.transition: .20s ease-out;
+	background-color: #236;
+}
+
+.divTableHeading {
+	background-color: #b9b9b9;
+	display: table-header-group;
+	width: 100%;
+}
+
+.divTableCell {
+	display: table-cell;
+	padding: 3px 3px;
+	color: #113322;
+	width: 50%;
+}
+
+.divTableCellnone {
+	display: none;
+}
+
+.divTableCell1 {
+	display: table-cell;
+	padding: 3px 3px;
+	color: #113322;
+	width: 20%;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+input{
+	padding: 5px;
+	margin: 2px;
+	width: 100%;
+	font-family: 'Jura', sans-serif;
+}
+
+input:hover{
+	transition: .5s ease-out;
+}
