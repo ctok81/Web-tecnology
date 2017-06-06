@@ -32,7 +32,7 @@ function hw(id) {
 		$co=0;
 		if(mysqli_multi_query($con,"SELECT name FROM Group_Services WHERE 1;"))
 		{
-			do 
+			do
 			{
 				if($result = mysqli_store_result($con))
 				{
@@ -47,7 +47,7 @@ function hw(id) {
 				}
 			} while (mysqli_more_results($con));
 		}
-		
+
 		echo"</div>";
 
 		if(isset($_GET['gri']) && $_GET['gri']<7)
@@ -87,17 +87,22 @@ function hw(id) {
 				echo "<div class='divTableCellnone'>";
 ?>
 					<form align="center" action="handler2.php" target="area" method="post" style="border: 5px; margin: 5px; padding: 3px 5px;">
-						<input type='tel' required name="phone" placeholder="Ваш Телефон. Пример: 71234567890" pattern='[7]{1}[\d]{10}' maxlength="11" title="Пример: 71112345678">
+						<input type='tel' required name="phone" placeholder="Ваш Телефон. Пример: 71234567890" pattern='7[\d]{10}' maxlength="11" title="Пример: 71112345678">
 						<input type="text" name="fio" placeholder="Ваш ФИО">
 						<input type="text" name="chto" placeholder="Что-нибудь">
 						<input type="submit" value="Заказать услугу">
 					</form>
+
+
 				</div>
 			</div>
 
 		</article>
 		<footer>
 			<div>Компания /*Наше навзание*/
+				<form action="client/search.php">
+					<input type ="submit" value="Перейти к поиску по Телефону">
+				</form>
 			 	<span style="float:right"><?php $date = date('Y-m-d H:i:s',time()+(2*3600));
 					echo "$date";?>
 				</span>
