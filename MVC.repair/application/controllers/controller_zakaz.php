@@ -11,7 +11,7 @@ class Controller_Zakaz extends Controller
 
 	function action_index()
 	{
-		if(!empty($_POST['phone']))
+		if(!empty($_POST['phone']) & ctype_digit($_POST['phone']))
 		{
 			$this->model->set_data($_POST['phone'], $_POST['fio'], $_POST['chto']);
 		}
