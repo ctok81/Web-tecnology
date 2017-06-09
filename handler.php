@@ -1,6 +1,6 @@
 <?php
 //Код Макса
-if(is_numeric($_POST['phone']) & preg_match("/[7]{1}[\d]{10}/", $_POST['phone']) == 1)
+if(is_numeric($_POST['phone']) & preg_match("/7{1}\d{10}/", $_POST['phone']) == 1)
 {
 	include("bd.php");
 	$p = $_POST['phone'];
