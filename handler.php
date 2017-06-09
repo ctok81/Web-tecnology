@@ -1,21 +1,28 @@
-<?php
-//Код Макса
-if(is_numeric($_POST['phone']) & preg_match("/7{1}\d{10}/", $_POST['phone']) == 1)
-{
-	include("bd.php");
-	$p = $_POST['phone'];
-	$f = $_POST['fio'];
-	$c = $_POST['chto'];
-	$link = mysqli_connect("127.0.0.1","Admin","963258741", "Web-tech");
-	mysqli_multi_query($link, "INSERT INTO `Client` VALUES(default, $p, '$f', '$c')");
-
-	print "<script language='Javascript'>function reload()
-				{	location = \"zakaz.php\"	};
-					setTimeout('reload()', 5000);
-			 </script>
-
-				<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";
-				exit;
-}
-//Код Макса
+<?
+header('Content-Type: text/html; charset=utf-8');
 ?>
+
+<?php
+
+if(is_numeric($_POST['phone']) & preg_match("/7\d{10}/", $_POST['phone']) == 1)
+{
+	require_once('/closed/bd.php');
+	$p = htmlspecialchars($_POST['phone']);
+	$f = htmlspecialchars($_POST['fio']);
+	$c = htmlspecialchars($_POST['chto']);
+
+	$link = mysqli_connect($host, $user, $password, $database);																								//подключение
+	$query = sprintf("INSERT INTO `Client` VALUES(default, %s, '%s', '%s')", $p, $f, $c); 										//форматирование строки
+	mysqli_query($link, $query);																																							//выполнение запроса
+	mysqli_close($link);																																											//закрытие соединения
+}
+
+?>
+<script language='Javascript'>
+function reload()
+			{
+				location = "zakaz.php"
+			};
+				setTimeout('reload()', 5000);
+</script>
+<div>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</div>
